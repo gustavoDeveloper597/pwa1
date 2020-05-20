@@ -1,5 +1,5 @@
 importScripts('js/sw-utilis.js');
-
+//https://gustavodeveloper597.github.io/pwa1/
 const STATIC_CACHE = 'static-v1';
 const DINAMIC_CACHE = 'dinamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
@@ -57,10 +57,10 @@ self.addEventListener('fetch', e => {
         if (response) {
             console.log('existe ', e.request.url)
             return response;
-        }else{
+        } else {
             console.log('No existe', e.request.url);
-            return fetch(e.request).then(resp2=>{
-                return actualizaCacheDinamico(DINAMIC_CACHE,e.request,resp2);
+            return fetch(e.request).then(resp2 => {
+                return actualizaCacheDinamico(DINAMIC_CACHE, e.request, resp2);
             });
         }
     });
