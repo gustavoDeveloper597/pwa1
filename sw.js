@@ -6,7 +6,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 
 
 const APP_SHELL = [
-    '/JavaEscritorio/pwa/06-twittor/',
+   // '/JavaEscritorio/pwa/06-twittor/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',
